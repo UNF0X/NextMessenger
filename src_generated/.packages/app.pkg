@@ -1,0 +1,13 @@
+[classes]
+app\forms\auth
+app\forms\chatInfo
+app\forms\inviteChat
+app\forms\MainForm
+app\forms\newChat
+app\forms\Profile
+app\forms\register
+app\forms\userInfo
+app\modules\AppModule
+app\modules\crypt
+app\modules\nextModule
+app\modules\tray

@@ -1,0 +1,14 @@
+.debug/bootstrap.php
+.debug/preloader.php
+app/forms/auth.php
+app/forms/chatInfo.php
+app/forms/inviteChat.php
+app/forms/MainForm.php
+app/forms/newChat.php
+app/forms/Profile.php
+app/forms/register.php
+app/forms/userInfo.php
+app/modules/AppModule.php
+app/modules/crypt.php
+app/modules/nextModule.php
+app/modules/tray.php

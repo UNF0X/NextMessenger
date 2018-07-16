@@ -1,0 +1,166 @@
+* {
+    -accent: #8bc34a;
+    -msgbg:#18191d;
+    -dlgbg:#292e34;
+    -slbg:#393e44;
+    -text:#ffffff;
+}
+/**************************************************************** 
+
+ScrollBar Skin 
+
+****************************************************************/ 
+.scroll-bar{ 
+-fx-background-color: -msgbg;
+} 
+.scroll-bar:horizontal .track, 
+.scroll-bar:vertical .track { 
+-fx-background-color: transparent; 
+-fx-border-color:transparent; 
+} 
+.scroll-bar:vertical .track-background, 
+.scroll-bar:horizontal .track-background { 
+-fx-background-color: transparent; 
+-fx-background-insets: 0; 
+} 
+.scroll-bar:horizontal .thumb { 
+-fx-background-color: rgb(211,211,211); 
+-fx-background-insets: 4 0 4 0; 
+} 
+.scroll-bar:vertical .thumb { 
+-fx-background-color: rgb(211,211,211); 
+-fx-background-insets: 0 4 0 4; 
+} 
+.scroll-bar:horizontal .thumb:hover, 
+.scroll-bar:vertical .thumb:hover { 
+-fx-background-color: rgb(231,231,231); 
+} 
+.scroll-bar:horizontal .thumb:pressed, 
+.scroll-bar:vertical .thumb:pressed { 
+-fx-background-color: rgb(255,255,255); 
+} 
+.scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button { 
+-fx-background-color:transparent; 
+-fx-padding: 5; 
+} 
+.scroll-bar:horizontal .increment-button, .scroll-bar:horizontal .decrement-button { 
+-fx-background-color:transparent; 
+-fx-padding: 5; 
+} 
+.scroll-bar:horizontal .increment-arrow { 
+-fx-shape: "M 0 0 L 4 8 L 8 0 Z"; 
+-fx-background-color: rgb(211,211,211); 
+-fx-padding: 0.25em; 
+-fx-rotate: -90; 
+} 
+.scroll-bar:vertical .increment-arrow { 
+-fx-background-color: rgb(211,211,211); 
+-fx-shape: "M 0 0 L 4 8 L 8 0 Z"; 
+-fx-padding: 0.25em; 
+-fx-rotate: 0; 
+} 
+.scroll-bar:horizontal .decrement-arrow { 
+-fx-background-color: rgb(211,211,211); 
+-fx-shape: "M 0 0 L 4 8 L 8 0 Z"; 
+-fx-padding: 0.25em; 
+-fx-rotate: 90; 
+} 
+.scroll-bar:vertical .decrement-arrow { 
+-fx-background-color: rgb(211,211,211); 
+-fx-shape: "M 0 0 L 4 8 L 8 0 Z"; 
+-fx-padding: 0.25em; 
+-fx-rotate: -180; 
+} 
+.scroll-bar:vertical:focused, 
+.scroll-bar:horizontal:focused { 
+-fx-background-color: transparent,rgb(96,96,96),rgb(96,96,96); 
+}
+
+
+.dialogspane .list-cell:filled:selected:focused, .list-cell:filled:selected {
+    /* 3:, 4: */
+    -fx-background-color: -slbg;
+    -fx-text-fill: white;
+}
+.dialogspane:pressed, .dialogspane:focused { -fx-background-color: -dlgbg;}
+.messagespane:pressed, .messagespane:focused { -fx-background-color: -msgbg;}
+.dialogspane .list-cell { -fx-text-fill: white; /* 5 */ }
+.dialogspane .list-cell:odd { -fx-background-color: -dlgbg; /* 1 */ }
+.dialogspane .list-cell:even { -fx-background-color: -dlgbg; /* for information */ }
+.messagespane .list-cell:odd { -fx-background-color: -msgbg; /* 1 */ }
+.messagespane .list-cell:even { -fx-background-color: -msgbg; /* for information */ }
+.messagespane .list-cell:filled:selected:focused, .list-cell:filled:selected {
+    /* 3:, 4: */
+    -fx-background-color: -slbg;
+    -fx-text-fill: white; /* 5 */
+}
+.messagespane .list-cell { -fx-text-fill: white; /* 5 */ }
+.messagespane .list-cell:odd { -fx-background-color: -msgbg; /* 1 */ }
+.messagespane .list-cell:even { -fx-background-color: -msgbg; /* for information */ }
+.messagespane .list-cell:filled:hover { 
+    -fx-background-color: -slbg;
+    -fx-text-fill: white;
+}
+.list-cell .list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: -slbg;
+    -fx-text-fill: white;
+}
+
+.icona {
+    -fx-font-family: 'Material Icons';
+    -fx-font-size : 24;
+}
+
+@font-face {
+    -fx-font-family: 'Google Sans'; /* Здесь вводим имя шрифта */
+    src: url('.data/font/GoogleSans-Regular.ttf'); /* Путь к файлу со шрифтом, начиная от src, протокол res:// не нужен !!! */
+}
+
+.inputmsg,.button,.button:focused,.button:hover {
+    -fx-border-color: -dlgbg;
+    -fx-border-width: 0px;
+    -fx-text-fill:white;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-color: -msgbg;
+}
+
+.inputmsg .content{
+    -fx-background-color: -dlgbg;
+}
+.inputmsg:focused  {
+    -fx-text-fill:white;
+    -fx-background-insets:0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;;
+}
+
+.root, .FormEditor {
+    -fx-font-smoothing-type: gray;   
+    -fx-background-color : -white;
+    -fx-fill-width : true;
+    -fx-fill-height : true;
+    -fx-font-family: "Google Sans";
+    /* remove the ugly focus shade */
+    -fx-focus-color : transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.dialogspane{
+    -fx-background-color: -dlgbg;  
+}
+
+.messagespane{
+    -fx-background-color: -msgbg;
+}
+
+.mainform, .userpane, .dialogspane {
+    -fx-background-color: -dlgbg;
+}
+.deftext {
+    -fx-text-fill: -text;
+    -fx-font-size:14px;
+}
+.styltext {
+    -fx-text-color: -accent;
+}
