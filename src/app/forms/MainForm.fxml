@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512" prefWidth="800" styleClass="mainform ">
+  <children>
+    <Panel AnchorPane.bottomAnchor="-2" AnchorPane.leftAnchor="264" AnchorPane.rightAnchor="0" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="panel" layoutX="264" layoutY="464" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="50" prefWidth="536" styleClass="" titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <TextField AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="48" alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="textArea" layoutX="8" layoutY="8" prefColumnCount="12" prefHeight="32" prefWidth="472" promptText="" text="">
+          <styleClass xmlns:fx="http://javafx.com/fxml">
+            <String fx:value="text-input"/>
+            <String fx:value="text-field"/>
+            <String fx:value="inputmsg"/>
+          </styleClass>
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </TextField>
+        <Data cursor="DEFAULT" enabled="1" id="data-textArea" visible="1"/>
+        <ImageViewEx AnchorPane.bottomAnchor="2" AnchorPane.rightAnchor="2" autoSize="false" centered="true" focusTraversable="false" height="48" id="imageAlt" layoutX="486" layoutY="0" mosaic="false" mosaicGap="0" proportional="false" stretch="false" styleClass="" textFill="#000000" width="48">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-imageAlt" image=".data/img/icons8-sent-26.png" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <ListViewEx AnchorPane.bottomAnchor="0" AnchorPane.topAnchor="88" editable="false" fixedCellSize="-1" focusTraversable="true" id="Dialogs" layoutX="0" layoutY="88" prefHeight="424" prefWidth="264" styleClass="list-view dialogspane ">
+      <items xmlns:fx="http://javafx.com/fxml">
+        <FXCollections fx:factory="observableArrayList"/>
+      </items>
+    </ListViewEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-Dialogs" visible="1"/>
+    <ListViewEx AnchorPane.bottomAnchor="48" AnchorPane.leftAnchor="272" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="88" editable="false" fixedCellSize="-1" focusTraversable="true" id="Messages" layoutX="272" layoutY="88" prefHeight="376" prefWidth="528" styleClass="list-view messagespane ">
+      <items xmlns:fx="http://javafx.com/fxml">
+        <FXCollections fx:factory="observableArrayList"/>
+      </items>
+    </ListViewEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-Messages" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-userpane" visible="1"/>
+    <FlatButton AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" alignment="CENTER_LEFT" color="#3c444d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button" layoutX="0" layoutY="0" prefHeight="32" prefWidth="792" style="deftext" styleClass="x-flat-button " text="   Next Messenger | Messaging" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </FlatButton>
+    <Data cursor="DEFAULT" enabled="1" id="data-button" visible="1"/>
+    <FlatButton AnchorPane.rightAnchor="0" alignment="CENTER" clickColor="#ff00003d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#ff000026" id="Close" layoutX="768" layoutY="0" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="Segoe MDL2 Assets" size="16"/>
+      </font>
+    </FlatButton>
+    <Data cursor="DEFAULT" enabled="1" id="data-Close" visible="1"/>
+    <FlatButton AnchorPane.rightAnchor="32" alignment="CENTER" clickColor="#ffffff3d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#ffffff26" id="Maximize" layoutX="736" layoutY="0" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="Segoe MDL2 Assets" size="12"/>
+      </font>
+    </FlatButton>
+    <Data cursor="DEFAULT" enabled="1" id="data-Maximize" visible="1"/>
+    <FlatButton AnchorPane.rightAnchor="64" alignment="CENTER" clickColor="#ffffff3d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#ffffff26" id="Minimize" layoutX="704" layoutY="0" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="Segoe MDL2 Assets" size="12"/>
+      </font>
+    </FlatButton>
+    <Data cursor="DEFAULT" enabled="1" id="data-Minimize" visible="1"/>
+    <Panel AnchorPane.leftAnchor="0" backgroundColor="#292e34" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="userpane" layoutX="0" layoutY="32" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="56" prefWidth="264" styleClass="userpane " titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="40" id="image" layoutX="8" layoutY="8" mosaic="false" mosaicGap="0" proportional="false" stretch="true" styleClass="" textFill="#000000" width="40">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </ImageViewEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-image" visible="1"/>
+        <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="username" layoutX="56" layoutY="8" prefHeight="40" prefWidth="152" style="deftext" styleClass="label " text="USERNAME" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="true">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-username" visible="1"/>
+        <FlatButton alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="buttonAlt" layoutX="216" layoutY="8" prefHeight="40" prefWidth="40" styleClass="x-flat-button " text="" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </FlatButton>
+        <Data cursor="DEFAULT" enabled="1" graphic=".data/img/icons8-add-24.png" id="data-buttonAlt" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Panel AnchorPane.leftAnchor="264" AnchorPane.rightAnchor="0" backgroundColor="#292e34" borderColor="#c0c0c0" borderRadius="0" borderStyle="SOLID" borderWidth="0" focusTraversable="false" id="dlgpanel" layoutX="264" layoutY="32" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="56" prefWidth="536" styleClass="userpane " titleColor="#333333" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <LabelEx AnchorPane.leftAnchor="8" AnchorPane.rightAnchor="8" alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="chat_title" layoutX="8" layoutY="8" prefHeight="20" prefWidth="512" styleClass="label deftext " text="Текст" textAlignment="LEFT" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="14"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-chat_title" visible="1"/>
+        <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="count" layoutX="8" layoutY="24" prefHeight="17" prefWidth="512" styleClass="label " text="Текст" textAlignment="LEFT" textFill="#808080" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-count" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="12"/>
+      </titleFont>
+    </Panel>
+    <Data cursor="DEFAULT" enabled="" id="data-dlgpanel" visible=""/>
+    <Separator AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" focusTraversable="false" id="separator" layoutX="0" layoutY="84" orientation="HORIZONTAL" prefHeight="8" prefWidth="792" styleClass="separator "/>
+    <Data cursor="DEFAULT" enabled="1" id="data-separator" visible="1"/>
+    <Data cursor="DEFAULT" enabled="" id="data-panel" visible=""/>
+  </children>
+</AnchorPane>

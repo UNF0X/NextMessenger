@@ -1,0 +1,44 @@
+{
+  "props": {
+    "singleton": true
+  },
+  "components": {
+    "downloader": {
+      "type": "bundle\\http\\HttpDownloader",
+      "x": 256,
+      "y": 288,
+      "props": {
+        "threadCount": "4"
+      }
+    },
+    "hotkey": {
+      "type": "script\\HotKeyScript",
+      "x": 192,
+      "y": 208,
+      "props": {
+        "disabled": true,
+        "key": "ctrl + v"
+      }
+    },
+    "timer": {
+      "type": "script\\TimerScript",
+      "x": 128,
+      "y": 48,
+      "props": {
+        "interval": "1000",
+        "repeatable": true,
+        "autoStart": false
+      }
+    },
+    "systemTray": {
+      "type": "script\\SystemTrayScript",
+      "x": 64,
+      "y": 48,
+      "props": {
+        "visible": "1",
+        "tooltip": "",
+        "icon": ".data/img/leaf_100.png"
+      }
+    }
+  }
+}
